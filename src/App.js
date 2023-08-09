@@ -1,24 +1,62 @@
-import logo from './logo.svg';
+/* eslint-disable no-unused-vars */
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { About } from './Components/About/About';
+import { Contact } from './Components/Contact/Contact';
+import { Header } from './Components/Header/Header';
+import { Home } from './Components/Home/Home';
+import { Services } from './Components/Services/Services';
+import { Work } from './Components/Work/Work';
+import React from "react";
+
+
 
 function App() {
+  let component;
+
+  switch(window.location.pathname){
+    case '/home':
+      component = <Home />;
+      break;
+    case "/about":
+      component = <About />;
+      break;
+    case '/services':
+      component = <Services />;
+      break;
+    case "/work":
+      component = <Work />;
+      break;
+    case "/contact":
+      component = <Contact />;
+      break;
+    default :
+      break;
+    
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Header />
+        {/* <div className='container'>
+            <Routes>
+              <Route path='/home' element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/services' element={<Services />} />
+              <Route path='/work' element={<Work />} />
+              <Route path='/contact' element={<Contact />} />
+            </Routes>
+        </div> */}
+        <div className='components'>
+          <Home />
+          <About />
+          <Work />
+          <Contact />
+        </div>
+       
+      </div>
+        
+
+       
   );
 }
 
