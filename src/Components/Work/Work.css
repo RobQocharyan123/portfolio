@@ -25,31 +25,31 @@
     color: gray;
 }
 
-.projects{
+/* .projects{
     display: flex;
     flex-wrap: wrap;
     gap: 38px;
     padding: 0 40px;
     padding-top: 20px;
-}
+} */
 
-.projects div{
+/* .projects div{
     width: 30%;
     height: 300px;
     border:1px solid red;
 
-}
+}  */
 
 
 @media screen and (max-width: 992px) {
-    .projects{
+    /* .projects{
        flex-direction: column;
     }
 
     .projects div{
         width: 100%;
         
-    }
+    } */
   }
 
  
