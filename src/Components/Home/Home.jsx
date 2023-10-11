@@ -15,9 +15,9 @@ export const Home = () => {
             <Typed 
             strings={
               [
-                'FrontEnd Developer...',
-                'Freelancer...',
-                'Designer...'
+                'FrontEnd Developer',
+                'Freelancer',
+                'Designer'
               ]
             }
             typeSpeed={80}

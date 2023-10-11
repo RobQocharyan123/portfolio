@@ -62,7 +62,7 @@ export const About = () => {
         <div className='about_info'>
           <h1>About me</h1>
           <div className='about_text'>
-          <p>I am a FrontEd developer.  A self-motivated, reliable, responsible, and hardworking person.  I can work independently and in groups. I am good at communicating and collaborating. I am creative and always up for  challenges! I am organized because I always plan my day to make sure that I complete all of my tasks on schedule. In my spare time, I enjoy listening to music, watching movies, and reading books related to my profession.</p>
+          <p>I am a FrontEnd developer.  A self-motivated, reliable, responsible, and hardworking person.  I can work independently and in groups. I am good at communicating and collaborating. I am creative and always up for  challenges! I am organized because I always plan my day to make sure that I complete all of my tasks on schedule. In my spare time, I enjoy listening to music, watching movies, and reading books related to my profession.</p>
           
           </div>
         </div>

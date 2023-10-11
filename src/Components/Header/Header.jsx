@@ -30,7 +30,7 @@ export const Header = () => {
             <CustomLink to={"/"}>Home</CustomLink>
             <CustomLink to={"/about"}>About</CustomLink>
             <CustomLink to={"/services"}>Services</CustomLink>
-            <CustomLink to={"/work"}>Workd</CustomLink>
+            <CustomLink to={"/work"}>Works</CustomLink>
             <CustomLink to={"/contact"}>Contact</CustomLink>
           </nav>
         </div>
