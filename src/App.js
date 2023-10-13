@@ -15,7 +15,7 @@ function App() {
   let component;
 
   switch(window.location.pathname){
-    case '/home':
+    case '/':
       component = <Home />;
       break;
     case "/about":
@@ -37,6 +37,7 @@ function App() {
   return (
     <div className="App">
         <Header />
+      
         <div className='container'>
         {/* <div className='components'>
           <Home />
@@ -45,7 +46,7 @@ function App() {
           <Contact />
         </div> */}
             <Routes>
-              <Route path='/' exact element={<Home />} />
+              <Route path='*'  element={<Home />} />
               <Route path='/about' element={<About />} />
               {/* <Route path='/services' element={<Services />} /> */}
               <Route path='/work' element={<Work />} />
