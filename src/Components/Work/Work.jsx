@@ -85,8 +85,8 @@ export const Work = () => {
                     
                   <img
                       
-                      width={'70%'}
-                      height={'70%'}
+                      width={'90%'}
+                      height={'80%'}
                       src={box.hrefImg}
                       alt="Image"
                     />

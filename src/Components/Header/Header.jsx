@@ -18,6 +18,10 @@ export const Header = () => {
     setTransition(!transition);
   };
 
+  const gyada = () => {
+    setTransition(false);
+  };
+
   return (
     <>
       <div className="header">
@@ -27,11 +31,11 @@ export const Header = () => {
 
         <div className="header_two">
           <nav>
-            <CustomLink to={"/"}>Home</CustomLink>
-            <CustomLink to={"/about"}>About</CustomLink>
-            <CustomLink to={"/services"}>Services</CustomLink>
-            <CustomLink to={"/work"}>Works</CustomLink>
-            <CustomLink to={"/contact"}>Contact</CustomLink>
+            <Link to={"/"}>Home</Link>
+            <Link to={"/about"}>About</Link>
+            {/* <Link to={"/services"}>Services</Link> */}
+            <Link to={"/work"}>Works</Link>
+            <Link to={"/contact"}>Contact</Link>
           </nav>
         </div>
 
@@ -40,20 +44,26 @@ export const Header = () => {
           <span onClick={onClickTransition} className="second"></span>
           <span onClick={onClickTransition} className="thrtee"></span>
         </div>
-
-        
       </div>
       {transition && (
-          <div className="header_responsive">
-            <nav>
-              <CustomLink to={"/"}>Home</CustomLink>
-              <CustomLink to={"/about"}>About</CustomLink>
-              <CustomLink to={"/services"}>Services</CustomLink>
-              <CustomLink to={"/work"}>Workd</CustomLink>
-              <CustomLink to={"/contact"}>Contact</CustomLink>
-            </nav>
-          </div>
-        )}
+        <div className="header_responsive">
+          <nav>
+            <Link to={"/"} onClick={gyada}>
+              Home
+            </Link>
+            <Link to={"/about"} onClick={gyada}>
+              About
+            </Link>
+            {/* <Link to={"/services"} onClick={gyada}>Services</Link> */}
+            <Link to={"/work"} onClick={gyada}>
+              Works
+            </Link>
+            <Link to={"/contact"} onClick={gyada}>
+              Contact
+            </Link>
+          </nav>
+        </div>
+      )}
     </>
   );
 };
